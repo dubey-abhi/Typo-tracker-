@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typo Tracker 👨‍💻</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Typo Tracker👨‍💻 </h1>
+    <p class="subtitle">Test and master your typing skills!</p>
+
+    <div id="textDisplay"></div>
+    <textarea id="inputArea" placeholder="Start typing here..."></textarea>
+
+    <div id="progressBar"><div id="progress"></div></div>
+
+    <div class="stats">
+      <div>WPM: <span id="wpm">0</span></div>
+      <div>Accuracy: <span id="accuracy">100</span>%</div>
+      <div>Time: <span id="time">0</span>s</div>
+      <div>Score: <span id="score">0</span></div>
+    </div>
+
+    <div class="buttons">
+      <button id="restartBtn">Restart 🔁</button>
+      <button id="toggleTheme">Toggle Theme 🌗</button>
+      <button id="showLeaderboard">Leaderboard 🏆</button>
+      <button id="settingsBtn">Settings ⚙️</button>
+    </div>
+
+    <div id="settingsPanel" class="hidden">
+      <h3>Settings</h3>
+      <label><input type="checkbox" id="soundToggle" checked> Sound Effects</label>
+      <label><input type="checkbox" id="cursorToggle" checked> Show Cursor</label>
+      <p>Difficulty:</p>
+      <button class="difficulty" data-difficulty="easy">Easy</button>
+      <button class="difficulty active" data-difficulty="medium">Medium</button>
+      <button class="difficulty" data-difficulty="hard">Hard</button>
+    </div>
+
+    <div id="leaderboard" class="hidden">
+      <h3>Leaderboard 🏆</h3>
+      <ul id="leaderboardList"></ul>
+      <button id="clearLeaderboard">Clear Leaderboard</button>
+      <button id="closeLeaderboard">Close</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
