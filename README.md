@@ -2,6 +2,9 @@
 
 Typo Tracker is a fun and interactive typing speed test web app. It helps you improve your typing skills by tracking your speed (WPM), accuracy, and score. It also includes a leaderboard and dark mode.
 
+## 🚀 Live Demo
+[Click here to try Typo Tracker](https://dubey-abhi.github.io/Typo-tracker-/)
+
 ## 🚀 Features
 
 - Live WPM (words per minute) calculation
